@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+       <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Exam</title>
+    </head>
+    <body>
+        <center>
+        <h1></h1>
+        <p></p>
+    <input type="text" id="search" placeholder="Input a value">
+    <input type="button" id="result" value="Search" onclick="search()">
+      </center>
+        
+        
+        <script type="text/javascript">
+            
+           function search(){
+            var input = document.getElementById("search").value;
+            var inoutLow = input.toLowerCase();
+            var item = ["laptop","mouse","Keyboard","coderstrust"];
+          
+            var flag = 0;
+            for(var i=0; i<item.length; i++) {
+                if (item[i] == inoutLow)
+                {
+                    flag = 1;
+                }
+            
+            }
+            if(flag==1){
+                document.write("Found the search element message");
+            }else{
+                document.write("Not found the search element message");
+            }
+           }
+                
+        </script>
+        
+    
+    
+</body>
+</html>

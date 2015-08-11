@@ -1,0 +1,49 @@
+
+<html>
+    <head>
+       <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ID 201, Find out Even number in range </title>
+<div class="col-md-8 col-md-offset-2">
+<button class="btn btn-danger btn-block btn-lg" onclick="myFunctionTwo()">
+<p class="text-capitalize text-center">check out even numbers in certain range</p>
+</button>
+<br>
+<p id="resultTwo" class="text-center text-uppercase"></p>
+<br>
+</div>
+
+<script>
+function myFunctionTwo()
+{
+var i;
+var inputOne = prompt("Sir please enter your minimum number");
+var inputOneInt = parseInt(inputOne);
+var inputTwo = prompt("Sir please enter your minimum number");
+var inputTwoInt = parseInt(inputTwo);
+
+if(isNaN(inputOneInt)||isNaN(inputTwoInt))
+{ 
+document.getElementById("resultTwo").innerHTML ="Sir please enter your minimum and maximum numbers"; 
+
+}
+else
+{
+for(i=inputOneInt;i<=inputTwoInt;i++)
+{
+if(i%2==0)
+{
+document.getElementById("resultTwo").innerHTML+=" Sir your EVEN numbers are: "+i;
+}
+}
+
+}
+
+}
+    </script>
+
+    </head>
+    <body>
+</body>
+</html>

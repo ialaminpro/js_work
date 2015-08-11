@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ID 201, Check Prime or not prime</title>    
+    </head>
+
+<body>
+    <center>
+        <h1>Find out Prime or not prime </h1>
+        <p></p>
+    <input type="number" id="num" placeholder="Input a number for check prime or not prime">
+    <input type="button" id="result" value="Get Result" onclick="isprime()">
+      </center>
+
+<script>
+
+function isprime()
+    {
+    var num = document.getElementById("num").value;
+	var result = "";
+	var flag=true;
+	
+	
+	for(var i=2; i<= Math.sqrt(num); i++){
+	
+		if(num%i == 0){
+			flag=false;	
+            break;
+		}
+	
+	}
+	
+	if(flag==false){
+		result = num + " is not a Prime Number. The number divided by "+i;
+	}else
+	{
+		result = num + " is a Prime Number";
+	}
+
+  // document.getElementById("display").innerHTML = result;
+        alert(result);
+}
+
+</script>
+
+
+
+</body></html>
